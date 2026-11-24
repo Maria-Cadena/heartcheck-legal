@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — HeartCheck</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./index.html">HeartCheck</a>
+      <nav>
+        <a href="./index.html">Inicio</a>
+        <a class="active" href="./privacy.html">Política de Privacidad</a>
+        <a href="./terms.html">Términos de Servicio</a>
+        <a href="./data-deletion.html">Eliminación de Datos</a>
+      </nav>
+    </header>
+    <main class="card">
+      <h1>Política de Privacidad de HeartCheck</h1>
+      <div class="notice">
+        <strong>Versión operativa:</strong> v1.0 · Antes de pasar la app a producción pública, reemplaza los campos marcados con
+        <code>[COMPLETAR]</code> con el nombre del responsable, correo oficial de contacto y fecha definitiva.
+      </div>
+
+      <h2>1. Responsable del tratamiento</h2>
+      <p>
+        Responsable de la aplicación HeartCheck: <strong>[COMPLETAR: Nombre del titular / equipo responsable]</strong>.<br />
+        Correo oficial de privacidad y soporte: <strong>[COMPLETAR: correo@tudominio.com]</strong>.
+      </p>
+
+      <h2>2. Qué es HeartCheck</h2>
+      <p>
+        HeartCheck es una aplicación móvil y web de apoyo al autocuidado personal y familiar orientada al registro manual
+        de mediciones de presión arterial, pulso, hábitos diarios (hidratación, actividad física, sueño, estado emocional y rutinas),
+        recordatorios de medicación, estudios médicos y localización de establecimientos de salud.
+      </p>
+
+      <h2>3. Datos que recopila y procesa HeartCheck</h2>
+      <ul>
+        <li><strong>Datos de cuenta y autenticación:</strong> nombre, correo electrónico, credenciales protegidas gestionadas por <strong>Supabase Auth</strong> o identificadores de sesión OAuth 2.0 / OpenID Connect (por ejemplo, Google o Facebook Login con los permisos mínimos <code>public_profile</code> y <code>email</code>).</li>
+        <li><strong>Registros de salud y bienestar:</strong> mediciones ingresadas por el usuario (presión sistólica, diastólica, pulso y notas), recordatorios de medicación, citas médicas, estudios adjuntos y hábitos diarios.</li>
+        <li><strong>Fotografías y avatares:</strong> imágenes que el usuario elige voluntariamente para su foto de perfil o estudios médicos, almacenadas de forma privada en el bucket <code>heartcheck-estudios</code> de Supabase Storage bajo políticas de acceso por usuario.</li>
+        <li><strong>Ubicación opcional:</strong> coordenadas obtenidas únicamente cuando el usuario autoriza el permiso de ubicación para centrar el mapa de centros médicos o consultar calidad del aire local.</li>
+      </ul>
+
+      <h2>4. Almacenamiento local (SQLite) y en la nube (Supabase)</h2>
+      <p>
+        HeartCheck utiliza una arquitectura <em>Offline-First</em> con base de datos local SQLite en el dispositivo y sincronización
+        con <strong>Supabase PostgreSQL</strong> protegida mediante políticas de seguridad a nivel de fila (<strong>Row Level Security — RLS</strong>),
+        de modo que cada usuario autenticado solo puede acceder a sus propios registros y perfiles autorizados.
+      </p>
+
+      <h2>5. Finalidad y uso de la información</h2>
+      <p>
+        Los datos se utilizan exclusivamente para brindar las funciones de seguimiento personal dentro de HeartCheck.
+        HeartCheck <strong>no vende datos personales ni de salud</strong> ni los comparte con redes publicitarias.
+      </p>
+
+      <h2>6. Derechos del usuario y eliminación de datos</h2>
+      <p>
+        Puedes editar o eliminar mediciones, hábitos, recordatorios, estudios y fotografía directamente dentro de la aplicación,
+        o solicitar la eliminación completa de tu cuenta siguiendo las instrucciones en
+        <a href="./data-deletion.html">Eliminación de Datos</a>.
+      </p>
+    </main>
+    <footer>HeartCheck · Política de Privacidad</footer>
+  </div>
+</body>
+</html>

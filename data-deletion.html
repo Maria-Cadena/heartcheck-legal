@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliminación de Datos — HeartCheck</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="./index.html">HeartCheck</a>
+      <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./privacy.html">Política de Privacidad</a>
+        <a href="./terms.html">Términos de Servicio</a>
+        <a class="active" href="./data-deletion.html">Eliminación de Datos</a>
+      </nav>
+    </header>
+    <main class="card">
+      <h1>Instrucciones para Solicitar la Eliminación de Datos en HeartCheck</h1>
+      <p>
+        Si creaste una cuenta en HeartCheck (incluyendo acceso mediante <strong>Facebook Login</strong>, <strong>Google</strong> o correo electrónico),
+        puedes eliminar tus datos de las siguientes formas reales:
+      </p>
+
+      <h2>Opción 1: Eliminar datos directamente dentro de la aplicación</h2>
+      <ul>
+        <li><strong>Mediciones, recordatorios, citas y estudios:</strong> abre la pestaña <em>Mi Salud</em> o <em>Estudios</em>, selecciona el registro y pulsa <strong>Eliminar</strong>.</li>
+        <li><strong>Fotografía de perfil:</strong> entra a <em>Perfil → Editar mi perfil → Quitar foto</em> y guarda los cambios.</li>
+        <li><strong>Quitar cuenta recordada del dispositivo:</strong> entra a <em>Perfil → Cuentas en este dispositivo → Quitar</em>.</li>
+      </ul>
+
+      <h2>Opción 2: Solicitar la eliminación total de tu cuenta y datos remotos</h2>
+      <p>
+        Para eliminar por completo tu cuenta de autenticación en Supabase Auth (<code>auth.users</code>), tu perfil en PostgreSQL
+        (<code>public.perfil</code> y registros asociados por cascada) y archivos privados en Supabase Storage (<code>heartcheck-estudios</code>):
+      </p>
+      <ol>
+        <li>Envía un correo electrónico a <strong>[COMPLETAR: correo@tudominio.com]</strong> con el asunto: <code>Solicitud de eliminación de datos - HeartCheck</code>.</li>
+        <li>Indica el <strong>correo electrónico</strong> asociado a tu cuenta (o el nombre de usuario con el que iniciaste sesión vía Facebook).</li>
+        <li>El equipo responsable verificará la titularidad de la solicitud y eliminará la cuenta y archivos asociados en un plazo máximo de <strong>7 días hábiles</strong>, enviando confirmación al correo solicitante.</li>
+      </ol>
+
+      <h2>Desvincular HeartCheck desde tu cuenta de Facebook</h2>
+      <p>
+        También puedes revocar el acceso de HeartCheck desde Facebook en cualquier momento:
+        <strong>Facebook → Configuración y privacidad → Configuración → Apps y sitios web → HeartCheck → Eliminar</strong>.
+      </p>
+    </main>
+    <footer>HeartCheck · Eliminación de Datos de Usuario</footer>
+  </div>
+</body>
+</html>
